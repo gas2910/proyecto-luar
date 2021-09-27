@@ -1,0 +1,437 @@
+/*reset de margenes y letra para toda la pagina*/
+
+body{
+    font-family: 'Roboto', sans-serif;
+    margin: 0px;
+    padding: 0px;
+}
+
+/*header*/
+
+header{
+    background-color: #030303;
+    grid-area: header;
+    justify-items: center;
+    align-items: center;
+    display: flex;
+    flex-flow: row;
+    justify-content: space-around;    
+}
+
+main{
+    grid-area: main;
+}
+
+footer{
+    grid-area: footer;
+    background-image: linear-gradient(to right, black , grey);
+}
+
+h1{
+    display: none;
+}
+
+/*clases*/
+/*clase tamaño de fuentes*/
+
+.titles-medium{
+    font-size: 20px;
+}
+
+.titles-small{
+    font-size: 15px;
+}
+
+.fontsize-text{
+    font-size: 15px;
+}
+
+/*clase colores*/
+.color-main{
+    color: chocolate;
+}
+
+.color-secondary{
+    color: #ffffff;
+}
+
+.color-terciary{
+    color: #f2a600;
+}
+
+.color-section{
+    background-color: #f2a600;
+}
+
+.titular-main{
+    font-family: 'Roboto' , sans-serif;
+    font-size: 25px;
+    font-weight: 600;
+    color:#f2a600;  
+}
+
+.uppercase{
+    text-transform: uppercase;
+}
+
+/*etiquetas*/
+
+#grilla-principal{
+    display: grid;
+    grid-template-areas: 
+    "header" 
+    "main" 
+    "footer" ;
+    grid-template-rows: 200px  auto  auto;
+    grid-template-columns: 100%;  
+}
+
+#productos-recomendados{
+    display: grid;
+    grid-template-rows: 50px, repeat(6, 100px);
+    grid-template-columns: 25% 75%;
+    grid-template-areas:
+    "titulo-recomendados titulo-recomendados" 
+    "imagenes-recomendados texto-recomendados"
+    "imagenes-recomendados texto-recomendados"
+    "imagenes-recomendados texto-recomendados"
+    "imagenes-recomendados texto-recomendados"
+    "imagenes-recomendados texto-recomendados"
+    "imagenes-recomendados texto-recomendados";
+    margin: 5px;  
+}
+
+#titulo-recomendados{
+    grid-area: titulo-recomendados;
+}
+
+#imagenes-recomendados{
+    grid-area: imagenes-recomendados;
+}
+
+#imagenes-recomendados img{
+    width: 100%;
+    height: 100px;
+    padding-top: 3px;   
+}
+
+#texto-recomendados{
+    grid-area: texto-recomendados; 
+}
+
+#texto-recomendados p{
+    margin-block-start: 0px;
+    margin-block-end: 0px;
+    height: 100px;
+    padding-left: 3px;  
+}
+
+#enlaces{
+    display: grid;
+    grid-template-rows: repeat(6, 200px);grid-template-columns: 100%;
+    grid-template-areas: 
+    "imagenes-enlaces"
+    "imagenes-enlaces"
+    "imagenes-enlaces"
+    "imagenes-enlaces"
+    "imagenes-enlaces"
+    "imagenes-enlaces";
+    margin: 5px;  
+}
+
+
+#imagenes-enlaces{
+    grid-area: imagenes-enlaces;
+}
+
+#imagenes-enlaces img{
+    width: 100%;
+    height: 200px;
+    padding-top: 3px;   
+}
+
+#imagenes-emprendimiento img{
+    width: 100%;
+    height: 300px;
+    padding-bottom: 5px;  
+}
+
+#seccion-1{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    overflow: hidden;
+}
+
+#seccion-1 img{
+    height: 250px;
+}
+
+#luar-logo{
+    width: 150px;
+}
+
+#lista-nav ul{
+    display: none;
+}
+
+#lista-nav li a{
+    color: #ffffff;
+    font-weight: bold;
+    text-decoration: none;  
+}
+
+#info-emprendimiento{
+    color: rgb(255, 255, 255);
+    display: block;
+}
+
+#title-showroom{
+    display: inline-block;
+    padding: 5px;
+}
+
+#logo-facebook{
+    display: inline-block;
+    transform: translate(50px , 0px);
+    padding: 3px;
+}
+
+#logo-instagram{
+    display: inline-block;
+    transform: translate(75px , 0px);
+    padding: 3px;
+}
+
+#logo-whatsapp{
+    display: inline-block;
+    transform: translate(100px , 0px);
+    padding: 3px;
+}
+
+#mapa{
+    padding: 5px;
+}
+
+#contacto{
+    padding: 15px;
+}
+
+#productos{
+    padding: 5px;
+}
+
+@media only screen and (min-width: 768px) {
+
+    #lista-nav{
+        display: inline-block;
+        list-style: none;
+        display: flex;
+        flex-direction: row;
+    }
+
+    #div-nav{
+        display: flex;
+        justify-content: center;
+        align-self: flex-end;
+    }
+
+    #enlaces{  
+        grid-template-rows: repeat(6, 400px); 
+    }
+
+    #imagenes-enlaces img{
+        width: 100%;
+        height: 400px;
+        padding-top: 3px;   
+    }
+
+    #imagenes-emprendimiento img{
+        width: 75%;
+        height: 400px;
+    } 
+
+    #logo-facebook{
+        display: inline-block;
+        transform: translate(590px , -50px);
+        padding: 3px;
+    }
+    
+    #logo-instagram{
+        display: inline-block;
+        transform: translate(590px , -50px);
+        padding: 3px;
+    }
+
+    #logo-whatsapp{
+        display: inline-block;
+        transform: translate(590px , -50px);
+        padding: 3px;
+    }
+
+    #mapa{
+        padding: 5px;
+    }
+
+    .margin-nav{
+        margin-left: 20px;
+    }
+
+    .titles-medium{
+        font-size: 25px;
+    }
+    
+    .titles-small{
+        font-size: 15px;
+    }
+    
+    .fontsize-text{
+        font-size: 15px;
+    }
+
+}
+
+@media only screen and (min-width: 1024px) {
+   
+    .titular-main{
+        font-size: 50px;
+        font-weight: 900;
+        display: inline;
+    }
+
+    .margin-nav{
+        margin-left: 30px;
+    }
+
+    .titles-medium{
+        font-size: 35px;
+    }
+    
+    .titles-small{
+        font-size: 25px;
+    }
+    
+    .fontsize-text{
+        font-size: 25px;
+    }
+
+    #boton-inicio{
+        background-color: #000000;
+    }
+
+    #boton-productos{
+        background-color: black;
+    }
+
+    #boton-enlaces{
+        background-color: black;
+    }
+
+    #boton-recetas{
+        background-color: black;
+    }
+
+    #boton-contacto{
+        background-color: black;
+    }
+
+    #boton-inicio:hover{
+        transition: 0.3s;
+        background-color: #f2a600;
+    }
+
+    #boton-productos:hover{
+        transition: 0.3s;
+        background-color: #f2a600;
+    }
+
+    #boton-enlaces:hover{
+        transition: 0.3s;
+        background-color: #f2a600;
+    }
+
+    #boton-recetas:hover{
+        transition: 0.3s;
+        background-color: #f2a600;
+    }
+
+    #boton-contacto:hover{
+        transition: 0.3s;
+        background-color: #f2a600;
+    }
+
+    #lista-nav li{
+        display: inline;
+        width: 40%;
+        position:relative;
+        font-size: 18px;
+    }
+    
+    #lista-nav ul{
+        position: absolute;
+        display: none;  
+    }
+
+    #lista-nav ul li{
+        display: inline;
+        font-size: 14px;
+        padding: 5px;    
+    }
+    
+    #lista-nav ul li a{
+        display: block;    
+    }
+    
+    #lista-nav li:hover ul{
+        display: block;
+        width: 250px;
+        background-color: #f2a600; 
+    }
+    
+    #lista-nav li:hover ul li{
+        display: inline;  
+    }
+
+    #imagenes-emprendimiento img{
+        width: 100%;
+        height: 300px;
+        padding-top: 10px;
+    }
+  
+    #imagenes-enlaces img{
+        width: 75%;
+        height: 400px;
+        padding-top: 3px;   
+    }
+
+    #luar-logo{
+        width: 150px;
+    }
+
+    #imagenes-recomendados img{
+    width: 200px;
+    height: 100px;
+    }
+
+    #logo-facebook{
+        display: inline-block;
+        transform: translate(800px , -50px);
+        padding: 3px;
+    }
+    
+    #logo-instagram{
+        display: inline-block;
+        transform: translate(800px , -50px);
+        padding: 3px;
+    }
+
+    #logo-whatsapp{
+        display: inline-block;
+        transform: translate(800px , -50px);
+        padding: 3px;
+    }
+
+    #mapa{
+        padding: 5px;
+    }
+}
