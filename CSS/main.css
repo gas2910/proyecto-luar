@@ -9,7 +9,7 @@ body{
 /*header*/
 
 header{
-    background-color: #030303;
+    background-color: blue;
     grid-area: header;
     justify-items: center;
     align-items: center;
