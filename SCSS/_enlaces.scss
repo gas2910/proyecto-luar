@@ -1,0 +1,45 @@
+@import "variables";
+
+
+#enlaces{
+    display: grid;
+    grid-template-rows: repeat(6, 200px);grid-template-columns: 100%;
+    grid-template-areas: 
+    "imagenes-enlaces"
+    "imagenes-enlaces"
+    "imagenes-enlaces"
+    "imagenes-enlaces"
+    "imagenes-enlaces"
+    "imagenes-enlaces";
+    margin: 5px;  
+
+    #imagenes-enlaces{
+        grid-area: imagenes-enlaces;
+    }
+    
+    #imagenes-enlaces{
+        img{
+            width: 100%;
+            height: 200px;
+            padding-top: 3px;   
+        }
+    }   
+
+    @media only screen and (min-width: 768px) {
+ 
+        grid-template-rows: repeat(6, 400px); 
+    
+        #imagenes-enlaces{
+            img{
+                width: 100%;
+                height: 400px;
+                padding-top: 3px;        
+            }
+        }
+    }
+}
+
+
+
+
+

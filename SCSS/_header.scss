@@ -1,0 +1,171 @@
+@import "variables";
+
+
+header{
+    background-color: #030303;
+    grid-area: header;
+    justify-items: center;
+    align-items: center;
+    display: flex;
+    flex-flow: row;
+    justify-content: space-around; 
+    h1{
+        display: none;
+        font-family: $font-family;
+        font-size: $font-size-main;
+        font-weight: $font-weight-main;
+        color: $color-terciary;
+    }
+    div{
+        a{
+            img{
+                width: 150px;
+            }
+        }
+        
+    }
+
+    div{
+        nav{
+            ul{
+                li{
+                    list-style: none;
+                    a{
+                        color: #fff;
+                        font-weight: bold;
+                        text-decoration: none;
+                    }
+                }
+                ul{
+                    display: none;
+                }
+            }
+        }
+    } 
+
+    @media only screen and (min-width: 768px) {
+
+        #lista-nav{
+            display: inline-block;
+            list-style: none;
+            display: flex;
+            flex-direction: row;
+        }
+    
+        #div-nav{
+            display: flex;
+            justify-content: center;
+            align-self: flex-end;
+        }
+    
+        .margin-nav{
+            margin-left: 20px;
+        }
+    
+        .titles-medium{
+            font-size: 25px;
+        }
+        
+        .titles-small{
+            font-size: 15px;
+        }
+        
+        .fontsize-text{
+            font-size: 15px;
+        }
+    
+    }
+
+    @media only screen and (min-width: 1024px) {
+
+        #luar-logo{
+            width: 150px;
+        }
+
+        #boton-inicio{
+            background-color: #000000;
+        }
+    
+        #boton-productos{
+            background-color: black;
+        }
+    
+        #boton-enlaces{
+            background-color: black;
+        }
+    
+        #boton-recetas{
+            background-color: black;
+        }
+    
+        #boton-contacto{
+            background-color: black;
+        }
+    
+        #boton-inicio:hover{
+            transition: 0.3s;
+            background-color: #f2a600;
+        }
+        
+    
+        #boton-productos:hover{
+            transition: 0.3s;
+            background-color: #f2a600;
+        }
+                   
+    
+        #boton-enlaces:hover{
+            transition: 0.3s;
+            background-color: #f2a600;
+        }
+        
+    
+        #boton-recetas:hover{
+            transition: 0.3s;
+            background-color: #f2a600;
+        }
+            
+    
+        #boton-contacto:hover{
+            transition: 0.3s;
+            background-color: #f2a600;
+        }
+        
+    
+        #lista-nav {
+            li{
+            display: inline;
+            width: 40%;
+            position:relative;
+            font-size: 18px;   
+            }
+            #boton-productos{
+                ul{
+                    position: absolute;
+                    display: none;
+                    li{
+                        display: inline;
+                        font-size: 14px;
+                        padding: 5px; 
+                    }
+                    li:hover {
+                        ul{
+                            display: block;
+                            width: 250px;
+                            background-color: #f2a600; 
+                            li{
+                                 display: inline;  
+                            }
+                        }
+                    }
+                                      
+                }
+            }
+            a{
+                display: block;    
+            }   
+        }    
+        
+    }
+        
+}

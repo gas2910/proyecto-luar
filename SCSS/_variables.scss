@@ -1,0 +1,106 @@
+$font-family: 'Roboto' , sans-serif;
+$font-size-main: 25px;
+$font-weight-main: 600; 
+$font-size-main: font-size 25px;
+$titles-medium: font-size 20px;
+$titles-small: font-size 15px;
+$uppercase: uppercase;
+$color-main: color chocolate; 
+$color-secondary: color #ffffff;
+$color-terciary: color #f2a600;
+
+
+@for $i from 1 through 3 {
+    .texto-#{$i} { font-size: 15px * $i; }
+}
+
+.titles-medium{
+    font-size: 20px;
+}
+
+.titles-small{
+    font-size: 15px;
+}
+
+.fontsize-text{
+    font-size: 15px;
+}
+
+.color-main{
+    color: chocolate;
+}
+
+.color-secondary{
+    color: #ffffff;
+}
+
+.color-terciary{
+    color: #f2a600;
+}
+
+.color-section{
+    background-color: #f2a600;
+}
+
+.titular-main{
+    font-family: 'Roboto' , sans-serif;
+    font-size: 25px;
+    font-weight: 600;
+    color:#f2a600;  
+}
+
+.uppercase{
+    text-transform: uppercase;
+}
+
+@media only screen and (min-width: 768px) {
+    .margin-nav{
+        margin-left: 20px;
+    }
+
+    .titles-medium{
+        font-size: 25px;
+    }
+    
+    .titles-small{
+        font-size: 15px;
+    }
+    
+    .fontsize-text{
+        font-size: 15px;
+    }
+
+}
+
+@media only screen and (min-width: 1024px) {
+   
+    .titular-main{
+        font-size: 50px;
+        font-weight: 900;
+        display: inline;
+    }
+
+    .margin-nav{
+        margin-left: 30px;
+    }
+
+    .titles-medium{
+        font-size: 35px;
+    }
+    
+    .titles-small{
+        font-size: 25px;
+    }
+    
+    .fontsize-text{
+        font-size: 25px;
+    }
+
+}
+  
+
+
+
+
+
+ 

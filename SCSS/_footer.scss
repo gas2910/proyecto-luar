@@ -1,0 +1,60 @@
+@import "variables";
+
+footer{
+    grid-area: footer;
+    background-image: linear-gradient(to right, black , grey);
+
+    #title-showroom{
+        display: inline-block;
+        padding: 5px;
+    }
+    
+    #logo-facebook{
+        display: inline-block;
+        transform: translate(50px , 0px);
+        padding: 3px;
+    }
+    
+    #logo-instagram{
+        display: inline-block;
+        transform: translate(75px , 0px);
+        padding: 3px;
+    }
+    
+    #logo-whatsapp{
+        display: inline-block;
+        transform: translate(100px , 0px);
+        padding: 3px;
+    }
+
+    #mapa{
+        padding: 5px;
+    }
+
+    @media only screen and (min-width: 1024px) {
+
+        #logo-facebook{
+            display: inline-block;
+            transform: translate(800px , -50px);
+            padding: 3px;
+        }
+    
+        #logo-instagram{
+            display: inline-block;
+            transform: translate(800px , -50px);
+            padding: 3px;
+        }
+
+        #logo-whatsapp{
+            display: inline-block;
+            transform: translate(800px , -50px);
+            padding: 3px;
+        }
+
+        #mapa{
+           padding: 5px;
+        }
+    
+    }
+
+}
