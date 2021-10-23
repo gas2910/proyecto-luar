@@ -59,7 +59,7 @@
   .titles-small {
     font-size: 25px; }
   .fontsize-text {
-    font-size: 25px; } }
+    font-size: 20px; } }
 
 body {
   font-family: 'Roboto', sans-serif;
@@ -127,7 +127,7 @@ body {
   .titles-small {
     font-size: 25px; }
   .fontsize-text {
-    font-size: 25px; } }
+    font-size: 20px; } }
 
 header {
   background-color: #030303;
@@ -281,13 +281,51 @@ header {
   .titles-small {
     font-size: 25px; }
   .fontsize-text {
-    font-size: 25px; } }
+    font-size: 20px; } }
 
 #grilla-principal {
   display: grid;
   grid-template-areas: "header"  "main"  "footer";
   grid-template-rows: 200px  auto  auto;
-  grid-template-columns: 100%; }
+  grid-template-columns: 100%;
+  /*#productos-recomendados{
+        display: grid;
+        grid-template-rows: 50px, repeat(6, 100px);
+        grid-template-columns: 25% 75%;
+        grid-template-areas:
+        "titulo-recomendados titulo-recomendados" 
+        "imagenes-recomendados texto-recomendados"
+        "imagenes-recomendados texto-recomendados"
+        "imagenes-recomendados texto-recomendados"
+        "imagenes-recomendados texto-recomendados"
+        "imagenes-recomendados texto-recomendados"
+        "imagenes-recomendados texto-recomendados";
+        margin: 5px;
+
+        #titulo-recomendados{
+            grid-area: titulo-recomendados;
+        }
+
+        #imagenes-recomendados{
+            grid-area: imagenes-recomendados;
+            img{
+                width: 100%;
+                height: 100px;
+                padding-top: 3px;  
+            }          
+        }
+
+        #texto-recomendados{
+            grid-area: texto-recomendados;
+            p{
+                margin-block-start: 0px;
+                margin-block-end: 0px;
+                height: 100px;
+                padding-left: 3px;  
+            } 
+        }
+        
+    }*/ }
   #grilla-principal main {
     grid-area: main; }
   #grilla-principal #seccion-1 {
@@ -298,6 +336,7 @@ header {
     #grilla-principal #seccion-1 img {
       height: 250px; }
   #grilla-principal #about {
+    padding-bottom: 12px;
     background-color: #f2a600; }
     #grilla-principal #about h2 {
       color: #fff; }
@@ -306,39 +345,27 @@ header {
     height: 250px; }
   #grilla-principal #info-emprendimiento {
     color: white; }
-  #grilla-principal #productos-recomendados {
-    display: grid;
-    grid-template-rows: 50px, repeat(6, 100px);
-    grid-template-columns: 25% 75%;
-    grid-template-areas: "titulo-recomendados titulo-recomendados"  "imagenes-recomendados texto-recomendados" "imagenes-recomendados texto-recomendados" "imagenes-recomendados texto-recomendados" "imagenes-recomendados texto-recomendados" "imagenes-recomendados texto-recomendados" "imagenes-recomendados texto-recomendados";
-    margin: 5px; }
-    #grilla-principal #productos-recomendados #titulo-recomendados {
-      grid-area: titulo-recomendados; }
-    #grilla-principal #productos-recomendados #imagenes-recomendados {
-      grid-area: imagenes-recomendados; }
-      #grilla-principal #productos-recomendados #imagenes-recomendados img {
-        width: 100%;
-        height: 100px;
-        padding-top: 3px; }
-    #grilla-principal #productos-recomendados #texto-recomendados {
-      grid-area: texto-recomendados; }
-      #grilla-principal #productos-recomendados #texto-recomendados p {
-        margin-block-start: 0px;
-        margin-block-end: 0px;
-        height: 100px;
-        padding-left: 3px; }
+  #grilla-principal #titulo-recomendados {
+    padding-left: 10px; }
+  #grilla-principal #cards-recomendados {
+    padding-left: 10px;
+    padding-bottom: 20px; }
   @media only screen and (min-width: 768px) {
     #grilla-principal #imagenes-emprendimiento img {
       width: 75%;
       height: 400px; } }
   @media only screen and (min-width: 1024px) {
-    #grilla-principal #imagenes-emprendimiento img {
-      width: 100%;
-      height: 300px;
-      padding-top: 10px; }
-    #grilla-principal #imagenes-recomendados img {
-      width: 200px;
-      height: 100px; } }
+    #grilla-principal {
+      /*#imagenes-recomendados {
+            img{
+                width: 200px;
+                height: 100px;
+            }
+        }*/ }
+      #grilla-principal #imagenes-emprendimiento img {
+        width: 100%;
+        height: 300px;
+        padding-top: 10px; } }
 
 .texto-1 {
   font-size: 15px; }
@@ -401,40 +428,353 @@ header {
   .titles-small {
     font-size: 25px; }
   .fontsize-text {
-    font-size: 25px; } }
+    font-size: 20px; } }
 
 footer {
   grid-area: footer;
   background-image: linear-gradient(to right, black, grey); }
   footer #title-showroom {
     display: inline-block;
-    padding: 5px; }
+    padding-left: 10px; }
   footer #logo-facebook {
     display: inline-block;
-    transform: translate(50px, 0px);
+    transform: translate(50px, -5px);
     padding: 3px; }
   footer #logo-instagram {
     display: inline-block;
-    transform: translate(75px, 0px);
+    transform: translate(75px, -5px);
     padding: 3px; }
   footer #logo-whatsapp {
     display: inline-block;
-    transform: translate(100px, 0px);
+    transform: translate(100px, -5px);
     padding: 3px; }
   footer #mapa {
-    padding: 5px; }
-  @media only screen and (min-width: 1024px) {
+    padding: 10px; }
+  @media only screen and (min-width: 768px) {
     footer #logo-facebook {
       display: inline-block;
-      transform: translate(800px, -50px);
+      transform: translate(550px, -15px);
       padding: 3px; }
     footer #logo-instagram {
       display: inline-block;
-      transform: translate(800px, -50px);
+      transform: translate(550px, -15px);
       padding: 3px; }
     footer #logo-whatsapp {
       display: inline-block;
-      transform: translate(800px, -50px);
+      transform: translate(550px, -15px);
+      padding: 3px; } }
+  @media only screen and (min-width: 1024px) {
+    footer #logo-facebook {
+      display: inline-block;
+      transform: translate(800px, -15px);
+      padding: 3px; }
+    footer #logo-instagram {
+      display: inline-block;
+      transform: translate(800px, -15px);
+      padding: 3px; }
+    footer #logo-whatsapp {
+      display: inline-block;
+      transform: translate(800px, -15px);
       padding: 3px; }
     footer #mapa {
-      padding: 5px; } }
+      padding-left: 10px; } }
+
+.texto-1 {
+  font-size: 15px; }
+
+.texto-2 {
+  font-size: 30px; }
+
+.texto-3 {
+  font-size: 45px; }
+
+.titles-medium {
+  font-size: 20px; }
+
+.titles-small {
+  font-size: 15px; }
+
+.fontsize-text {
+  font-size: 15px; }
+
+.color-main {
+  color: chocolate; }
+
+.color-secondary {
+  color: #ffffff; }
+
+.color-terciary {
+  color: #f2a600; }
+
+.color-section {
+  background-color: #f2a600; }
+
+.titular-main {
+  font-family: 'Roboto' , sans-serif;
+  font-size: 25px;
+  font-weight: 600;
+  color: #f2a600; }
+
+.uppercase {
+  text-transform: uppercase; }
+
+@media only screen and (min-width: 768px) {
+  .margin-nav {
+    margin-left: 20px; }
+  .titles-medium {
+    font-size: 25px; }
+  .titles-small {
+    font-size: 15px; }
+  .fontsize-text {
+    font-size: 15px; } }
+
+@media only screen and (min-width: 1024px) {
+  .titular-main {
+    font-size: 50px;
+    font-weight: 900;
+    display: inline; }
+  .margin-nav {
+    margin-left: 30px; }
+  .titles-medium {
+    font-size: 35px; }
+  .titles-small {
+    font-size: 25px; }
+  .fontsize-text {
+    font-size: 20px; } }
+
+.texto-1 {
+  font-size: 15px; }
+
+.texto-2 {
+  font-size: 30px; }
+
+.texto-3 {
+  font-size: 45px; }
+
+.titles-medium {
+  font-size: 20px; }
+
+.titles-small {
+  font-size: 15px; }
+
+.fontsize-text {
+  font-size: 15px; }
+
+.color-main {
+  color: chocolate; }
+
+.color-secondary {
+  color: #ffffff; }
+
+.color-terciary {
+  color: #f2a600; }
+
+.color-section {
+  background-color: #f2a600; }
+
+.titular-main {
+  font-family: 'Roboto' , sans-serif;
+  font-size: 25px;
+  font-weight: 600;
+  color: #f2a600; }
+
+.uppercase {
+  text-transform: uppercase; }
+
+@media only screen and (min-width: 768px) {
+  .margin-nav {
+    margin-left: 20px; }
+  .titles-medium {
+    font-size: 25px; }
+  .titles-small {
+    font-size: 15px; }
+  .fontsize-text {
+    font-size: 15px; } }
+
+@media only screen and (min-width: 1024px) {
+  .titular-main {
+    font-size: 50px;
+    font-weight: 900;
+    display: inline; }
+  .margin-nav {
+    margin-left: 30px; }
+  .titles-medium {
+    font-size: 35px; }
+  .titles-small {
+    font-size: 25px; }
+  .fontsize-text {
+    font-size: 20px; } }
+
+#contacto {
+  padding: 15px; }
+
+.texto-1 {
+  font-size: 15px; }
+
+.texto-2 {
+  font-size: 30px; }
+
+.texto-3 {
+  font-size: 45px; }
+
+.titles-medium {
+  font-size: 20px; }
+
+.titles-small {
+  font-size: 15px; }
+
+.fontsize-text {
+  font-size: 15px; }
+
+.color-main {
+  color: chocolate; }
+
+.color-secondary {
+  color: #ffffff; }
+
+.color-terciary {
+  color: #f2a600; }
+
+.color-section {
+  background-color: #f2a600; }
+
+.titular-main {
+  font-family: 'Roboto' , sans-serif;
+  font-size: 25px;
+  font-weight: 600;
+  color: #f2a600; }
+
+.uppercase {
+  text-transform: uppercase; }
+
+@media only screen and (min-width: 768px) {
+  .margin-nav {
+    margin-left: 20px; }
+  .titles-medium {
+    font-size: 25px; }
+  .titles-small {
+    font-size: 15px; }
+  .fontsize-text {
+    font-size: 15px; } }
+
+@media only screen and (min-width: 1024px) {
+  .titular-main {
+    font-size: 50px;
+    font-weight: 900;
+    display: inline; }
+  .margin-nav {
+    margin-left: 30px; }
+  .titles-medium {
+    font-size: 35px; }
+  .titles-small {
+    font-size: 25px; }
+  .fontsize-text {
+    font-size: 20px; } }
+
+#cards-enlaces {
+  padding-left: 10px;
+  padding-bottom: 20px; }
+
+/*#enlaces{
+    display: grid;
+    grid-template-rows: repeat(6, 200px);grid-template-columns: 100%;
+    grid-template-areas: 
+    "imagenes-enlaces"
+    "imagenes-enlaces"
+    "imagenes-enlaces"
+    "imagenes-enlaces"
+    "imagenes-enlaces"
+    "imagenes-enlaces";
+    margin: 5px;  
+
+    #imagenes-enlaces{
+        grid-area: imagenes-enlaces;
+    }
+    
+    #imagenes-enlaces{
+        img{
+            width: 100%;
+            height: 200px;
+            padding-top: 3px;   
+        }
+    }   
+
+    @media only screen and (min-width: 768px) {
+ 
+        grid-template-rows: repeat(6, 400px); 
+    
+        #imagenes-enlaces{
+            img{
+                width: 100%;
+                height: 400px;
+                padding-top: 3px;        
+            }
+        }
+    }
+}*/
+.texto-1 {
+  font-size: 15px; }
+
+.texto-2 {
+  font-size: 30px; }
+
+.texto-3 {
+  font-size: 45px; }
+
+.titles-medium {
+  font-size: 20px; }
+
+.titles-small {
+  font-size: 15px; }
+
+.fontsize-text {
+  font-size: 15px; }
+
+.color-main {
+  color: chocolate; }
+
+.color-secondary {
+  color: #ffffff; }
+
+.color-terciary {
+  color: #f2a600; }
+
+.color-section {
+  background-color: #f2a600; }
+
+.titular-main {
+  font-family: 'Roboto' , sans-serif;
+  font-size: 25px;
+  font-weight: 600;
+  color: #f2a600; }
+
+.uppercase {
+  text-transform: uppercase; }
+
+@media only screen and (min-width: 768px) {
+  .margin-nav {
+    margin-left: 20px; }
+  .titles-medium {
+    font-size: 25px; }
+  .titles-small {
+    font-size: 15px; }
+  .fontsize-text {
+    font-size: 15px; } }
+
+@media only screen and (min-width: 1024px) {
+  .titular-main {
+    font-size: 50px;
+    font-weight: 900;
+    display: inline; }
+  .margin-nav {
+    margin-left: 30px; }
+  .titles-medium {
+    font-size: 35px; }
+  .titles-small {
+    font-size: 25px; }
+  .fontsize-text {
+    font-size: 20px; } }
+
+#cards-recetas {
+  padding-left: 10px;
+  padding-bottom: 20px; }

@@ -6,53 +6,74 @@ footer{
 
     #title-showroom{
         display: inline-block;
-        padding: 5px;
+        padding-left: 10px;
     }
     
     #logo-facebook{
         display: inline-block;
-        transform: translate(50px , 0px);
+        transform: translate(50px , -5px);
         padding: 3px;
     }
     
     #logo-instagram{
         display: inline-block;
-        transform: translate(75px , 0px);
+        transform: translate(75px , -5px);
         padding: 3px;
     }
     
     #logo-whatsapp{
         display: inline-block;
-        transform: translate(100px , 0px);
+        transform: translate(100px , -5px);
         padding: 3px;
     }
 
     #mapa{
-        padding: 5px;
+        padding: 10px;
+
+    }
+
+    @media only screen and (min-width: 768px){
+        #logo-facebook{
+            display: inline-block;
+            transform: translate(550px , -15px);
+            padding: 3px;
+        }
+    
+        #logo-instagram{
+            display: inline-block;
+            transform: translate(550px , -15px);
+            padding: 3px;
+        }
+
+        #logo-whatsapp{
+            display: inline-block;
+            transform: translate(550px , -15px);
+            padding: 3px;
+        }
     }
 
     @media only screen and (min-width: 1024px) {
 
         #logo-facebook{
             display: inline-block;
-            transform: translate(800px , -50px);
+            transform: translate(800px , -15px);
             padding: 3px;
         }
     
         #logo-instagram{
             display: inline-block;
-            transform: translate(800px , -50px);
+            transform: translate(800px , -15px);
             padding: 3px;
         }
 
         #logo-whatsapp{
             display: inline-block;
-            transform: translate(800px , -50px);
+            transform: translate(800px , -15px);
             padding: 3px;
         }
 
         #mapa{
-           padding: 5px;
+           padding-left: 10px;
         }
     
     }
