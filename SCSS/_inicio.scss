@@ -44,7 +44,7 @@
     }
 
     #titulo-recomendados{
-        padding-left: 10px;
+        padding: 15px;
     }
 
     #cards-recomendados{
@@ -52,45 +52,6 @@
         padding-bottom: 20px;
     }
     
-    /*#productos-recomendados{
-        display: grid;
-        grid-template-rows: 50px, repeat(6, 100px);
-        grid-template-columns: 25% 75%;
-        grid-template-areas:
-        "titulo-recomendados titulo-recomendados" 
-        "imagenes-recomendados texto-recomendados"
-        "imagenes-recomendados texto-recomendados"
-        "imagenes-recomendados texto-recomendados"
-        "imagenes-recomendados texto-recomendados"
-        "imagenes-recomendados texto-recomendados"
-        "imagenes-recomendados texto-recomendados";
-        margin: 5px;
-
-        #titulo-recomendados{
-            grid-area: titulo-recomendados;
-        }
-
-        #imagenes-recomendados{
-            grid-area: imagenes-recomendados;
-            img{
-                width: 100%;
-                height: 100px;
-                padding-top: 3px;  
-            }          
-        }
-
-        #texto-recomendados{
-            grid-area: texto-recomendados;
-            p{
-                margin-block-start: 0px;
-                margin-block-end: 0px;
-                height: 100px;
-                padding-left: 3px;  
-            } 
-        }
-        
-    }*/
-
     @media only screen and (min-width: 768px) {
         #imagenes-emprendimiento img{
             width: 75%;
@@ -107,13 +68,6 @@
                 padding-top: 10px;
             }
         }
-        
-        /*#imagenes-recomendados {
-            img{
-                width: 200px;
-                height: 100px;
-            }
-        }*/
         
     }
    
