@@ -1,6 +1,5 @@
 @import "variables";
 
-
 header{
     background-color: #030303;
     grid-area: header;
@@ -9,6 +8,7 @@ header{
     display: flex;
     flex-flow: row;
     justify-content: space-around; 
+
     h1{
         display: none;
         font-family: $font-family;
@@ -16,6 +16,7 @@ header{
         font-weight: $font-weight-main;
         color: $color-terciary;
     }
+
     div{
         a{
             img{
@@ -107,65 +108,26 @@ header{
             background-color: #f2a600;
         }
         
-    
         #boton-productos:hover{
             transition: 0.3s;
             background-color: #f2a600;
         }
                    
-    
         #boton-enlaces:hover{
             transition: 0.3s;
             background-color: #f2a600;
         }
         
-    
         #boton-recetas:hover{
             transition: 0.3s;
             background-color: #f2a600;
         }
             
-    
         #boton-contacto:hover{
             transition: 0.3s;
             background-color: #f2a600;
         }
         
-    
-        #lista-nav {
-            li{
-            display: inline;
-            width: 40%;
-            position:relative;
-            font-size: 18px;   
-            }
-            #boton-productos{
-                ul{
-                    position: absolute;
-                    display: none;
-                    li{
-                        display: inline;
-                        font-size: 14px;
-                        padding: 5px; 
-                    }
-                    li:hover {
-                        ul{
-                            display: block;
-                            width: 250px;
-                            background-color: #f2a600; 
-                            li{
-                                 display: inline;  
-                            }
-                        }
-                    }
-                                      
-                }
-            }
-            a{
-                display: block;    
-            }   
-        }    
-        
     }
-        
+
 }

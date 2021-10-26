@@ -61,6 +61,10 @@
   .fontsize-text {
     font-size: 20px; } }
 
+@media only screen and (min-width: 1024px) and (min-width: 1440px) {
+  .fontsize-text {
+    font-size: 25px; } }
+
 body {
   font-family: 'Roboto', sans-serif;
   margin: 0px;
@@ -128,6 +132,10 @@ body {
     font-size: 25px; }
   .fontsize-text {
     font-size: 20px; } }
+
+@media only screen and (min-width: 1024px) and (min-width: 1440px) {
+  .fontsize-text {
+    font-size: 25px; } }
 
 header {
   background-color: #030303;
@@ -198,27 +206,7 @@ header {
       background-color: #f2a600; }
     header #boton-contacto:hover {
       transition: 0.3s;
-      background-color: #f2a600; }
-    header #lista-nav li {
-      display: inline;
-      width: 40%;
-      position: relative;
-      font-size: 18px; }
-    header #lista-nav #boton-productos ul {
-      position: absolute;
-      display: none; }
-      header #lista-nav #boton-productos ul li {
-        display: inline;
-        font-size: 14px;
-        padding: 5px; }
-      header #lista-nav #boton-productos ul li:hover ul {
-        display: block;
-        width: 250px;
-        background-color: #f2a600; }
-        header #lista-nav #boton-productos ul li:hover ul li {
-          display: inline; }
-    header #lista-nav a {
-      display: block; } }
+      background-color: #f2a600; } }
 
 .texto-1 {
   font-size: 15px; }
@@ -283,6 +271,10 @@ header {
   .fontsize-text {
     font-size: 20px; } }
 
+@media only screen and (min-width: 1024px) and (min-width: 1440px) {
+  .fontsize-text {
+    font-size: 25px; } }
+
 #grilla-principal {
   display: grid;
   grid-template-areas: "header"  "main"  "footer";
@@ -295,8 +287,6 @@ header {
     flex-direction: row;
     flex-wrap: nowrap;
     overflow: hidden; }
-    #grilla-principal #seccion-1 img {
-      height: 250px; }
   #grilla-principal #about {
     padding-bottom: 12px;
     background-color: #f2a600; }
@@ -385,6 +375,10 @@ header {
   .fontsize-text {
     font-size: 20px; } }
 
+@media only screen and (min-width: 1024px) and (min-width: 1440px) {
+  .fontsize-text {
+    font-size: 25px; } }
+
 footer {
   grid-area: footer;
   background-image: linear-gradient(to right, black, grey); }
@@ -405,6 +399,8 @@ footer {
     padding: 3px; }
   footer #mapa {
     padding: 10px; }
+  footer #texto-mapa {
+    display: none; }
   @media only screen and (min-width: 768px) {
     footer #logo-facebook {
       display: inline-block;
@@ -421,18 +417,40 @@ footer {
   @media only screen and (min-width: 1024px) {
     footer #logo-facebook {
       display: inline-block;
-      transform: translate(800px, -15px);
+      transform: translate(325px, -15px);
       padding: 3px; }
     footer #logo-instagram {
       display: inline-block;
-      transform: translate(800px, -15px);
+      transform: translate(325px, -15px);
       padding: 3px; }
     footer #logo-whatsapp {
       display: inline-block;
-      transform: translate(800px, -15px);
+      transform: translate(325px, -15px);
       padding: 3px; }
     footer #mapa {
-      padding-left: 10px; } }
+      padding-left: 10px;
+      height: 250px;
+      width: 450px; }
+      footer #mapa iframe {
+        height: 350px;
+        width: 450px; }
+    footer #texto-mapa {
+      display: inline-block;
+      width: 500px;
+      transform: translate(475px, -225px); } }
+  @media only screen and (min-width: 1440px) {
+    footer #logo-facebook {
+      display: inline-block;
+      transform: translate(750px, -15px);
+      padding: 3px; }
+    footer #logo-instagram {
+      display: inline-block;
+      transform: translate(750px, -15px);
+      padding: 3px; }
+    footer #logo-whatsapp {
+      display: inline-block;
+      transform: translate(750px, -15px);
+      padding: 3px; } }
 
 .texto-1 {
   font-size: 15px; }
@@ -497,11 +515,15 @@ footer {
   .fontsize-text {
     font-size: 20px; } }
 
-#cards-productos {
+@media only screen and (min-width: 1024px) and (min-width: 1440px) {
+  .fontsize-text {
+    font-size: 25px; } }
+
+main #productos #cards-productos {
   padding-left: 10px;
   padding-bottom: 20px; }
 
-#title-productos {
+main #productos #title-productos {
   padding: 10px; }
 
 .texto-1 {
@@ -567,7 +589,11 @@ footer {
   .fontsize-text {
     font-size: 20px; } }
 
-#contacto {
+@media only screen and (min-width: 1024px) and (min-width: 1440px) {
+  .fontsize-text {
+    font-size: 25px; } }
+
+main #contacto {
   padding: 10px; }
 
 .texto-1 {
@@ -633,50 +659,17 @@ footer {
   .fontsize-text {
     font-size: 20px; } }
 
-#cards-enlaces {
+@media only screen and (min-width: 1024px) and (min-width: 1440px) {
+  .fontsize-text {
+    font-size: 25px; } }
+
+main #enlaces #cards-enlaces {
   padding-left: 10px;
   padding-bottom: 20px; }
 
-#title-enlaces {
+main #enlaces #title-enlaces {
   padding: 10px; }
 
-/*#enlaces{
-    display: grid;
-    grid-template-rows: repeat(6, 200px);grid-template-columns: 100%;
-    grid-template-areas: 
-    "imagenes-enlaces"
-    "imagenes-enlaces"
-    "imagenes-enlaces"
-    "imagenes-enlaces"
-    "imagenes-enlaces"
-    "imagenes-enlaces";
-    margin: 5px;  
-
-    #imagenes-enlaces{
-        grid-area: imagenes-enlaces;
-    }
-    
-    #imagenes-enlaces{
-        img{
-            width: 100%;
-            height: 200px;
-            padding-top: 3px;   
-        }
-    }   
-
-    @media only screen and (min-width: 768px) {
- 
-        grid-template-rows: repeat(6, 400px); 
-    
-        #imagenes-enlaces{
-            img{
-                width: 100%;
-                height: 400px;
-                padding-top: 3px;        
-            }
-        }
-    }
-}*/
 .texto-1 {
   font-size: 15px; }
 
@@ -739,10 +732,384 @@ footer {
     font-size: 25px; }
   .fontsize-text {
     font-size: 20px; } }
+
+@media only screen and (min-width: 1024px) and (min-width: 1440px) {
+  .fontsize-text {
+    font-size: 25px; } }
 
 #cards-recetas {
   padding-left: 10px;
   padding-bottom: 20px; }
 
 #title-recetas {
+  padding: 10px; }
+
+.texto-1 {
+  font-size: 15px; }
+
+.texto-2 {
+  font-size: 30px; }
+
+.texto-3 {
+  font-size: 45px; }
+
+.titles-medium {
+  font-size: 20px; }
+
+.titles-small {
+  font-size: 15px; }
+
+.fontsize-text {
+  font-size: 15px; }
+
+.color-main {
+  color: chocolate; }
+
+.color-secondary {
+  color: #ffffff; }
+
+.color-terciary {
+  color: #f2a600; }
+
+.color-section {
+  background-color: #f2a600; }
+
+.titular-main {
+  font-family: 'Roboto' , sans-serif;
+  font-size: 25px;
+  font-weight: 600;
+  color: #f2a600; }
+
+.uppercase {
+  text-transform: uppercase; }
+
+@media only screen and (min-width: 768px) {
+  .margin-nav {
+    margin-left: 20px; }
+  .titles-medium {
+    font-size: 25px; }
+  .titles-small {
+    font-size: 15px; }
+  .fontsize-text {
+    font-size: 15px; } }
+
+@media only screen and (min-width: 1024px) {
+  .titular-main {
+    font-size: 50px;
+    font-weight: 900;
+    display: inline; }
+  .margin-nav {
+    margin-left: 30px; }
+  .titles-medium {
+    font-size: 35px; }
+  .titles-small {
+    font-size: 25px; }
+  .fontsize-text {
+    font-size: 20px; } }
+
+@media only screen and (min-width: 1024px) and (min-width: 1440px) {
+  .fontsize-text {
+    font-size: 25px; } }
+
+main #sal-marina #cards-sal {
+  padding-left: 10px;
+  padding-bottom: 20px; }
+
+main #sal-marina #title-sal {
+  padding: 10px; }
+
+.texto-1 {
+  font-size: 15px; }
+
+.texto-2 {
+  font-size: 30px; }
+
+.texto-3 {
+  font-size: 45px; }
+
+.titles-medium {
+  font-size: 20px; }
+
+.titles-small {
+  font-size: 15px; }
+
+.fontsize-text {
+  font-size: 15px; }
+
+.color-main {
+  color: chocolate; }
+
+.color-secondary {
+  color: #ffffff; }
+
+.color-terciary {
+  color: #f2a600; }
+
+.color-section {
+  background-color: #f2a600; }
+
+.titular-main {
+  font-family: 'Roboto' , sans-serif;
+  font-size: 25px;
+  font-weight: 600;
+  color: #f2a600; }
+
+.uppercase {
+  text-transform: uppercase; }
+
+@media only screen and (min-width: 768px) {
+  .margin-nav {
+    margin-left: 20px; }
+  .titles-medium {
+    font-size: 25px; }
+  .titles-small {
+    font-size: 15px; }
+  .fontsize-text {
+    font-size: 15px; } }
+
+@media only screen and (min-width: 1024px) {
+  .titular-main {
+    font-size: 50px;
+    font-weight: 900;
+    display: inline; }
+  .margin-nav {
+    margin-left: 30px; }
+  .titles-medium {
+    font-size: 35px; }
+  .titles-small {
+    font-size: 25px; }
+  .fontsize-text {
+    font-size: 20px; } }
+
+@media only screen and (min-width: 1024px) and (min-width: 1440px) {
+  .fontsize-text {
+    font-size: 25px; } }
+
+main #azucar-saborizada #cards-azucar {
+  padding-left: 10px;
+  padding-bottom: 20px; }
+
+main #azucar-saborizada #title-azucar {
+  padding: 10px; }
+
+.texto-1 {
+  font-size: 15px; }
+
+.texto-2 {
+  font-size: 30px; }
+
+.texto-3 {
+  font-size: 45px; }
+
+.titles-medium {
+  font-size: 20px; }
+
+.titles-small {
+  font-size: 15px; }
+
+.fontsize-text {
+  font-size: 15px; }
+
+.color-main {
+  color: chocolate; }
+
+.color-secondary {
+  color: #ffffff; }
+
+.color-terciary {
+  color: #f2a600; }
+
+.color-section {
+  background-color: #f2a600; }
+
+.titular-main {
+  font-family: 'Roboto' , sans-serif;
+  font-size: 25px;
+  font-weight: 600;
+  color: #f2a600; }
+
+.uppercase {
+  text-transform: uppercase; }
+
+@media only screen and (min-width: 768px) {
+  .margin-nav {
+    margin-left: 20px; }
+  .titles-medium {
+    font-size: 25px; }
+  .titles-small {
+    font-size: 15px; }
+  .fontsize-text {
+    font-size: 15px; } }
+
+@media only screen and (min-width: 1024px) {
+  .titular-main {
+    font-size: 50px;
+    font-weight: 900;
+    display: inline; }
+  .margin-nav {
+    margin-left: 30px; }
+  .titles-medium {
+    font-size: 35px; }
+  .titles-small {
+    font-size: 25px; }
+  .fontsize-text {
+    font-size: 20px; } }
+
+@media only screen and (min-width: 1024px) and (min-width: 1440px) {
+  .fontsize-text {
+    font-size: 25px; } }
+
+main #salsas-deshidratadas #cards-salsas {
+  padding-left: 10px;
+  padding-bottom: 20px; }
+
+main #salsas-deshidratadas #title-salsas {
+  padding: 10px; }
+
+.texto-1 {
+  font-size: 15px; }
+
+.texto-2 {
+  font-size: 30px; }
+
+.texto-3 {
+  font-size: 45px; }
+
+.titles-medium {
+  font-size: 20px; }
+
+.titles-small {
+  font-size: 15px; }
+
+.fontsize-text {
+  font-size: 15px; }
+
+.color-main {
+  color: chocolate; }
+
+.color-secondary {
+  color: #ffffff; }
+
+.color-terciary {
+  color: #f2a600; }
+
+.color-section {
+  background-color: #f2a600; }
+
+.titular-main {
+  font-family: 'Roboto' , sans-serif;
+  font-size: 25px;
+  font-weight: 600;
+  color: #f2a600; }
+
+.uppercase {
+  text-transform: uppercase; }
+
+@media only screen and (min-width: 768px) {
+  .margin-nav {
+    margin-left: 20px; }
+  .titles-medium {
+    font-size: 25px; }
+  .titles-small {
+    font-size: 15px; }
+  .fontsize-text {
+    font-size: 15px; } }
+
+@media only screen and (min-width: 1024px) {
+  .titular-main {
+    font-size: 50px;
+    font-weight: 900;
+    display: inline; }
+  .margin-nav {
+    margin-left: 30px; }
+  .titles-medium {
+    font-size: 35px; }
+  .titles-small {
+    font-size: 25px; }
+  .fontsize-text {
+    font-size: 20px; } }
+
+@media only screen and (min-width: 1024px) and (min-width: 1440px) {
+  .fontsize-text {
+    font-size: 25px; } }
+
+main #te-hebras #cards-te {
+  padding-left: 10px;
+  padding-bottom: 20px; }
+
+main #te-hebras #title-te {
+  padding: 10px; }
+
+.texto-1 {
+  font-size: 15px; }
+
+.texto-2 {
+  font-size: 30px; }
+
+.texto-3 {
+  font-size: 45px; }
+
+.titles-medium {
+  font-size: 20px; }
+
+.titles-small {
+  font-size: 15px; }
+
+.fontsize-text {
+  font-size: 15px; }
+
+.color-main {
+  color: chocolate; }
+
+.color-secondary {
+  color: #ffffff; }
+
+.color-terciary {
+  color: #f2a600; }
+
+.color-section {
+  background-color: #f2a600; }
+
+.titular-main {
+  font-family: 'Roboto' , sans-serif;
+  font-size: 25px;
+  font-weight: 600;
+  color: #f2a600; }
+
+.uppercase {
+  text-transform: uppercase; }
+
+@media only screen and (min-width: 768px) {
+  .margin-nav {
+    margin-left: 20px; }
+  .titles-medium {
+    font-size: 25px; }
+  .titles-small {
+    font-size: 15px; }
+  .fontsize-text {
+    font-size: 15px; } }
+
+@media only screen and (min-width: 1024px) {
+  .titular-main {
+    font-size: 50px;
+    font-weight: 900;
+    display: inline; }
+  .margin-nav {
+    margin-left: 30px; }
+  .titles-medium {
+    font-size: 35px; }
+  .titles-small {
+    font-size: 25px; }
+  .fontsize-text {
+    font-size: 20px; } }
+
+@media only screen and (min-width: 1024px) and (min-width: 1440px) {
+  .fontsize-text {
+    font-size: 25px; } }
+
+main #ceramica-artesanal #cards-ceramica {
+  padding-left: 10px;
+  padding-bottom: 20px; }
+
+main #ceramica-artesanal #title-ceramica {
   padding: 10px; }

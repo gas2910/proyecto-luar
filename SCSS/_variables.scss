@@ -9,7 +9,6 @@ $color-main: color chocolate;
 $color-secondary: color #ffffff;
 $color-terciary: color #f2a600;
 
-
 @for $i from 1 through 3 {
     .texto-#{$i} { font-size: 15px * $i; }
 }
@@ -94,6 +93,14 @@ $color-terciary: color #f2a600;
     
     .fontsize-text{
         font-size: 20px;
+    }
+
+    @media only screen and (min-width: 1440px){
+
+        .fontsize-text{
+            font-size: 25px;
+        }
+        
     }
 
 }

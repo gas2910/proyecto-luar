@@ -29,7 +29,10 @@ footer{
 
     #mapa{
         padding: 10px;
+    }
 
+    #texto-mapa{
+        display: none;
     }
 
     @media only screen and (min-width: 768px){
@@ -56,24 +59,58 @@ footer{
 
         #logo-facebook{
             display: inline-block;
-            transform: translate(800px , -15px);
+            transform: translate(325px , -15px);
             padding: 3px;
         }
     
         #logo-instagram{
             display: inline-block;
-            transform: translate(800px , -15px);
+            transform: translate(325px , -15px);
             padding: 3px;
         }
 
         #logo-whatsapp{
             display: inline-block;
-            transform: translate(800px , -15px);
+            transform: translate(325px , -15px);
             padding: 3px;
         }
 
         #mapa{
            padding-left: 10px;
+           height: 250px;
+           width: 450px;
+           iframe{
+            height: 350px;
+            width: 450px;
+           }
+        }
+
+        #texto-mapa{
+            display:inline-block;
+            width: 500px;
+            transform: translate(475px , -225px);
+        }
+    
+    }
+
+    @media only screen and (min-width: 1440px) {
+
+        #logo-facebook{
+            display: inline-block;
+            transform: translate(750px , -15px);
+            padding: 3px;
+        }
+    
+        #logo-instagram{
+            display: inline-block;
+            transform: translate(750px , -15px);
+            padding: 3px;
+        }
+
+        #logo-whatsapp{
+            display: inline-block;
+            transform: translate(750px , -15px);
+            padding: 3px;
         }
     
     }
